@@ -1,0 +1,63 @@
+[
+  {
+  "titulo": "TakeOrder",
+  "descripcion": "R.E.P.O. es una aplicación web Full Stack desarrollada para la gestión integral de un servicio de autoservicio de limpieza. Permite al personal administrativo controlar productos, ventas, usuarios y categorías, todo desde una interfaz sencilla e intuitiva.",
+  "imagen": "./assets/img/repoTP.png",
+  "tecnologias": [
+    { "icono": "bi bi-bootstrap", "nombre": "Bootstrap" },
+    { "icono": "bi bi-filetype-sql", "nombre": "SQL" },
+    { "icono": "bi bi-filetype-html", "nombre": "HTML5" },
+    { "icono": "bi bi-filetype-css", "nombre": "CSS3" },
+    { "icono": "bi bi-filetype-js", "nombre": "Node.js" },
+    { "icono": "bi bi-database", "nombre": "MySQL" }
+  ],
+  "botones": {
+    "demo": {
+      "texto": "Pruébalo",
+      "url": "https://tu-demo.com",
+      "estilo": "btn btn-pink"
+    },
+    "codigo": {
+      "texto": "Código",
+      "url": "https://github.com/tuusuario/takeorder",
+      "estilo": "btn btn-dark"
+    },
+    "diseño": {
+      "texto": "Diseño",
+      "url": "https://figma.com/tu-prototipo",
+      "estilo": "btn btn-outline-light"
+    }
+  }
+},
+  {
+    "titulo": "TakeOrder",
+    "descripcion": "App de gestión para restaurantes que sincroniza en tiempo real comandas, pagos y comunicación entre cocina y camareros, optimizando el servicio.🍽️📲",
+    "imagen": "./assets/img/takeorder.png",
+    "tecnologias": [
+      { "icono": "bi bi-bootstrap", "nombre": "Bootstrap" },
+      { "icono": "bi bi-filetype-js", "nombre": "JavaScript" },
+      { "icono": "bi bi-filetype-ts", "nombre": "TypeScript" },
+      { "icono": "bi bi-react", "nombre": "React" },
+      { "icono": "bi bi-node-plus", "nombre": "Node.js" },
+      { "icono": "bi bi-database", "nombre": "MongoDB" },
+      { "icono": "bi bi-cloud", "nombre": "AWS" }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/tuusuario/takeorder",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
+    }
+  }
+]
