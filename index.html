@@ -11,13 +11,26 @@
       rel="stylesheet"
     />
     <!-- icons -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <!-- Bootstrap JS (para el botón colapsable en mobile) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- contacto via mail -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("1OiiO4XmJAFLDIAL4");
+    </script>
   </head>
   <body class="text-white bg-personalizado">
     <header></header>
@@ -25,7 +38,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-personalizado px-3 fixed-top"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-info" href="#">Portfolio</a>
+        <a class="navbar-brand fw-bold text-info" href="#">LucianoBDN</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,21 +70,20 @@
       id="sobre-mi"
       class="d-flex align-items-center justify-content-center min-vh-100 text-light border-top border-info"
     >
-      <div class="container">
+      <div class="container-fluid px-5">
         <div class="row align-items-center justify-content-center">
-          <!-- Imagen -->
-          <div class="col-md-5 text-center mb-4 mb-md-0">
+          <div class="col-10 col-md-5 col-lg-4 text-center mb-4 mb-md-0">
             <img
               src="./assets/img/Lucho.png"
               alt="Foto Luciano"
-              class="img-fluid rounded shadow"
+              class="img-fluid rounded shadow w-75 w-md-50 w-lg-100"
             />
           </div>
-
-          <!-- Texto -->
-          <div class="col-md-6">
-            <h2 class="text-info fw-bold">Luciano Bordón</h2>
-            <p>
+          <div class="col-11 col-md-6 col-lg-5">
+            <h2 class="text-info fw-bold fs-1 fs-lg-display-4">
+              Luciano Bordón
+            </h2>
+            <p class="fs-5 fs-lg-4">
               Programador y estudiante de la Tecnicatura Universitaria en
               Programación (UTN), con experiencia práctica en proyectos reales.
               Donde trabajé desde el backend hasta el frontend. Me apasiona
@@ -83,17 +95,17 @@
               detalle como validaciones, diseño responsivo, y estructura clara
               del código.
             </p>
-            <div class="mt-3 d-flex gap-3 flex-wrap">
+            <div class="mt-4 d-flex gap-3 flex-wrap">
               <a
-                href="https://www.linkedin.com/in/tu-perfil"
-                class="btn btn-outline-light"
+                href="https://www.linkedin.com/in/luciano-bordonn/"
+                class="btn btn-outline-light btn-lg px-4 py-2"
                 target="_blank"
               >
                 <i class="bi bi-linkedin"></i> LinkedIn
               </a>
               <a
                 href="https://github.com/LucianoBDN"
-                class="btn btn-info text-dark fw-bold"
+                class="btn btn-info text-dark fw-bold btn-lg px-4 py-2"
                 target="_blank"
               >
                 <i class="bi bi-github"></i> GitHub
@@ -103,6 +115,7 @@
         </div>
       </div>
     </section>
+
     <section id="proyectos" class="py-5 bg-personalizado text-white">
       <div class="container">
         <h2 class="text-info fw-bold mb-4">
@@ -139,6 +152,39 @@
         </div>
       </div>
     </section>
+    <section id="experiencia">
+      <div class="container py-5">
+        <h4 class="fw-bold text-white mb-4 d-flex align-items-center">
+          <i class="bi bi-briefcase-fill text-info me-2 fs-4"></i> EXPERIENCIA
+        </h4>
+        <div id="timeline" class="timeline"></div>
+      </div>
+    </section>
+<section id="contacto"  class="py-5">
+  <div class="container">
+    <h4 class="fw-bold text-white mb-4 d-flex align-items-center">
+      <i class="bi bi-send-fill text-info me-2 fs-4"></i> CONTÁCTAME
+    </h4>
+
+<form id="form" class="contacto p-4 rounded">
+  <div class="mb-3">
+    <label for="name" class="form-label text-white">Name</label>
+    <input type="text" class="form-control form-bg text-white border-0 placeholder-custom" id="name" name="name" placeholder="Enter your name">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label text-white">Email</label>
+    <input type="email" class="form-control form-bg text-white border-0 placeholder-custom" id="email" name="email" placeholder="Enter your email">
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label text-white">Message</label>
+    <textarea class="form-control form-bg text-white border-0 placeholder-custom" id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+  </div>
+  <button type="submit" id="buttonContacto" class="btn btn-outline-info d-flex align-items-center gap-2">
+    <i class="bi bi-send"></i> Enviar mensaje
+  </button>
+</form>
+  </div>
+</section>
     <script src="./js/main.js"></script>
   </body>
 </html>

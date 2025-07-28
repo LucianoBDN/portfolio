@@ -1,18 +1,42 @@
 document.addEventListener("DOMContentLoaded", async function () {
   try {
-    const proyectos = await cargarProyectos("./data/proyectos.json");
+    const proyectos = await cargarJson("./data/proyectos.json");
     renderizarProyectos(proyectos);
+    const experiencias = await cargarJson("./data/experiencias.js");
+    renderizarExperiencia(experiencias);
   } catch (err) {
     console.error("Error al cargar los proyectos:", err);
   }
+
+  const btn = document.getElementById("buttonContacto");
+
+  document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    btn.value = "Sending...";
+
+    const serviceID = "default_service";
+    const templateID = "template_z3irdwa";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Send Email";
+        alert("Sent!");
+      },
+      (err) => {
+        btn.value = "Send Email";
+        alert(JSON.stringify(err));
+      }
+    );
+  });
 });
 
-async function cargarProyectos(path) {
+async function cargarJson(path) {
   const res = await fetch(path);
   if (!res.ok) {
     throw new Error("No se pudo cargar el JSON");
   }
-  return await res.json(); 
+  return await res.json();
 }
 
 function renderizarProyectos(proyectos) {
@@ -25,18 +49,20 @@ function renderizarProyectos(proyectos) {
     const tecnologiasHTML = proyecto.tecnologias
       .map(
         (t) => `
-          <i 
-            class="${t.icono} fs-4" 
-            title="${t.nombre}" 
-            style="color: #60A5FA;"
-          ></i>
-        `
+      <img 
+        src="${t.icono}" 
+        alt="${t.nombre}" 
+        title="${t.nombre}" 
+        class="img-fluid" 
+        style="width: 40px; height: 40px; object-fit: contain;"
+      />
+    `
       )
       .join("");
 
     item.innerHTML = `
       <div class="d-flex justify-content-center py-5">
-        <div class="card bg-dark text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 800px;">
+        <div class="card text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 900px;">
           <img src="${proyecto.imagen}" class="card-img-top rounded-top" alt="${proyecto.titulo}">
           <div class="card-body text-center">
             <h5 class="card-title text-info fw-bold">${proyecto.titulo}</h5>
@@ -47,18 +73,39 @@ function renderizarProyectos(proyectos) {
             </div>
 
             <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
-              <a href="${proyecto.botones.demo.url}" class="${proyecto.botones.demo.estilo} btn-sm" target="_blank">
-                <i class="bi bi-play-fill"></i> ${proyecto.botones.demo.texto}
+              <a href="${proyecto.botones.demo.url}" class="btn-carrousel btn-demo btn-sm" target="_blank">
+                <i class="bi bi-link-45deg"></i> ${proyecto.botones.demo.texto}
               </a>
-              <a href="${proyecto.botones.codigo.url}" class="${proyecto.botones.codigo.estilo} btn-sm" target="_blank">
-                <i class="bi bi-code-slash"></i> ${proyecto.botones.codigo.texto}
+              <a href="${proyecto.botones.codigo.url}" class="btn-carrousel btn-code btn-sm" target="_blank">
+                <i class="bi bi-github i-codigo"></i> ${proyecto.botones.codigo.texto}
               </a>
-              <a href="${proyecto.botones.diseño.url}" class="${proyecto.botones.diseño.estilo} btn-sm" target="_blank">
+              <a href="${proyecto.botones.diseño.url}" class="btn-carrousel btn-desing btn-sm" target="_blank">
                 <i class="bi bi-brush"></i> ${proyecto.botones.diseño.texto}
               </a>
             </div>
           </div>
         </div>
+      </div>
+    `;
+    contenedor.appendChild(item);
+  });
+}
+
+function renderizarExperiencia(experiencias) {
+  const contenedor = document.getElementById("timeline");
+  contenedor.innerHTML = "";
+
+  experiencias.forEach((exp) => {
+    const item = document.createElement("div");
+    item.className = "timeline-item";
+    item.innerHTML = `
+      <span class="timeline-dot"></span>
+      <div class="timeline-content">
+        <p class="date mb-2">
+          <i class="bi bi-calendar3 me-2"></i> ${exp.fecha}
+        </p>
+        <h5 class="fw-bold text-danger">${exp.puesto}</h5>
+        <p class="description">${exp.descripcion}</p>
       </div>
     `;
     contenedor.appendChild(item);

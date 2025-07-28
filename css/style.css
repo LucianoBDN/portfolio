@@ -1,10 +1,15 @@
+
+/* body */
+
 body{
-  padding-top: 50px;
+  padding-top: 70px;
   
 }
 .bg-personalizado {
   background-color: #111827 !important;
 }
+
+/* navbar */
 .navbar {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -21,17 +26,20 @@ body{
   color: #dc3545 !important; /* rojo */
 }
 
+/* carrousel */
+
 .carousel-item {
   min-height: 500px;
 }
 
 .card img {
   object-fit: cover;
-  max-height: 240px;
+  max-height: 400px;
 }
 
 .card .card-body {
   padding: 1rem 1.25rem;
+  background-color: #111827 !important;
 }
 
 .card-img-top {
@@ -42,7 +50,97 @@ body{
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #111827;
   border-radius: 50%;
 }
 
+/* botones carrousel */
+.btn-carrousel{
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-demo{
+  background-color: #F72585 !important;
+  padding: 10px 20px;
+}
+
+.btn-code{
+  border: 2px solid #4361EE;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+/* icono del boton */
+
+.bi-brush{
+  color: #F72585;
+}
+.i-codigo{
+  color: #F72585;
+}
+
+.btn-desing{
+  border: 2px solid #4361EE;
+  padding: 10px 20px;
+}
+
+/* experiencia */
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  border-left: 2px solid #3B82F6; /* Línea vertical */
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -46px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #3B82F6; /* Punto azul */
+  border-radius: 50%;
+  border: 3px solid #0F172A; /* Fondo detrás para "cortar" la línea */
+}
+
+.timeline-content {
+
+  border: 1px solid #4CC9F0;
+  border-radius: 8px;
+  padding: 20px;
+  color: #E5E7EB;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content .date {
+  color: #38BDF8; 
+  font-size: 0.9rem;
+}
+
+.timeline-content .description {
+  font-size: 0.85rem;
+  color: #D1D5DB;
+}
+
+/* formulario */
+
+.contacto{
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.form-bg{
+  background-color: #382930 !important;
+}
+
+.placeholder-custom::placeholder {
+  color: #BA9CA8 !important; /* Cambiá este color como quieras */
+}
