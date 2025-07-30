@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   try {
     const proyectos = await cargarJson("./data/proyectos.json");
     renderizarProyectos(proyectos);
-    const experiencias = await cargarJson("./data/experiencias.js");
+    const experiencias = await cargarJson("./data/experiencias.json");
     renderizarExperiencia(experiencias);
   } catch (err) {
     console.error("Error al cargar los proyectos:", err);
