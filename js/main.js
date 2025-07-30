@@ -13,19 +13,22 @@ document.addEventListener("DOMContentLoaded", async function () {
   document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    btn.value = "Sending...";
+    btn.innerHTML = '<i class="bi bi-send"></i> Enviando...';
+    btn.disabled = true;
 
     const serviceID = "default_service";
     const templateID = "template_z3irdwa";
 
     emailjs.sendForm(serviceID, templateID, this).then(
       () => {
-        btn.value = "Send Email";
-        alert("Sent!");
+        btn.innerHTML = '<i class="bi bi-send"></i> Enviado ✔️';
+        btn.disabled = false;
+        limpiarForm();
       },
       (err) => {
-        btn.value = "Send Email";
-        alert(JSON.stringify(err));
+        btn.innerHTML = '<i class="bi bi-send"></i> Error al enviar';
+        btn.disabled = false;
+        alert("Error: " + JSON.stringify(err));
       }
     );
   });
@@ -110,4 +113,14 @@ function renderizarExperiencia(experiencias) {
     `;
     contenedor.appendChild(item);
   });
+}
+
+const limpiarForm = () => {
+  const form = document.getElementById("form").reset();
+};
+
+const validarForm = () => {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 }

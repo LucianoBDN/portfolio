@@ -46,5 +46,53 @@
       "estilo": "btn btn-outline-light"
     }
   }
+},
+  {
+  "titulo": "R.E.P.O.",
+  "descripcion": "R.E.P.O. es una aplicación web Full Stack desarrollada para la gestión integral de un servicio de autoservicio de limpieza. Permite al personal administrativo controlar productos, ventas, usuarios y categorías, todo desde una interfaz sencilla e intuitiva.",
+  "imagen": "./assets/img/repoTP.png",
+  "tecnologias": [
+   {
+    "nombre": "HTML",
+    "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+   },
+   {
+    "nombre": "CSS",
+    "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+   },
+   {
+    "nombre": "SQL",
+    "icono": "https://cdn-icons-png.flaticon.com/128/7506/7506880.png"
+   },
+   {
+    "nombre": "Node.js",
+    "icono": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+   },
+   {
+    "nombre": "javascript",
+    "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+   },
+   {
+    "nombre": "Bootstrap",
+    "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
+   }
+  ],
+  "botones": {
+    "demo": {
+      "texto": "Pruébalo",
+      "url": "https://tu-demo.com",
+      "estilo": "btn btn-pink"
+    },
+    "codigo": {
+      "texto": "Código",
+      "url": "https://github.com/pioacosta/R.E.P.O..TP",
+      "estilo": "btn btn-dark"
+    },
+    "diseño": {
+      "texto": "Diseño",
+      "url": "https://figma.com/tu-prototipo",
+      "estilo": "btn btn-outline-light"
+    }
+  }
 }
 ]

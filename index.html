@@ -117,7 +117,7 @@
     </section>
 
     <section id="proyectos" class="py-5 bg-personalizado text-white">
-      <div class="container">
+      <div class="container py-2">
         <h2 class="text-info fw-bold mb-4">
           <i class="bi bi-code-slash"></i> PROYECTOS
         </h2>
@@ -160,31 +160,54 @@
         <div id="timeline" class="timeline"></div>
       </div>
     </section>
-<section id="contacto"  class="py-5">
-  <div class="container">
-    <h4 class="fw-bold text-white mb-4 d-flex align-items-center">
-      <i class="bi bi-send-fill text-info me-2 fs-4"></i> CONTÁCTAME
-    </h4>
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <h4 class="fw-bold text-white mb-4 d-flex align-items-center">
+          <i class="bi bi-send-fill text-info me-2 fs-4"></i> CONTÁCTAME
+        </h4>
 
-<form id="form" class="contacto p-4 rounded">
-  <div class="mb-3">
-    <label for="name" class="form-label text-white">Name</label>
-    <input type="text" class="form-control form-bg text-white border-0 placeholder-custom" id="name" name="name" placeholder="Enter your name">
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label text-white">Email</label>
-    <input type="email" class="form-control form-bg text-white border-0 placeholder-custom" id="email" name="email" placeholder="Enter your email">
-  </div>
-  <div class="mb-3">
-    <label for="message" class="form-label text-white">Message</label>
-    <textarea class="form-control form-bg text-white border-0 placeholder-custom" id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
-  </div>
-  <button type="submit" id="buttonContacto" class="btn btn-outline-info d-flex align-items-center gap-2">
-    <i class="bi bi-send"></i> Enviar mensaje
-  </button>
-</form>
-  </div>
-</section>
+        <form id="form" class="contacto p-4 rounded">
+          <div class="mb-3">
+            <label for="name" class="form-label text-white">Name</label>
+            <input
+              type="text"
+              class="form-control form-bg text-white border-0 placeholder-custom"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white">Email</label>
+            <input
+              type="email"
+              class="form-control form-bg text-white border-0 placeholder-custom"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-white">Message</label>
+            <textarea
+              class="form-control form-bg text-white border-0 placeholder-custom"
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="buttonContacto"
+            class="btn btn-outline-info d-flex align-items-center gap-2"
+          >
+            <i class="bi bi-send"></i> Enviar mensaje
+          </button>
+          <div id="liveAlertPlaceholder"></div>
+        </form>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>
