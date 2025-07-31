@@ -1,0 +1,20 @@
+[
+  { "title": "UI/UX", "icon": "bi-vector-pen", "tools": "Figma, Whimsical" },
+  {
+    "title": "Frontend",
+    "icon": "bi-laptop",
+    "tools": "HTML, CSS, React, JavaScript"
+  },
+  {
+    "title": "Backend",
+    "icon": "bi-hdd-network",
+    "tools": "Node Js, Express, TypeScript, Python, Java"
+  },
+  {
+    "title": "Database",
+    "icon": "bi-database",
+    "tools": "MongoDB, MySQL, PostgreSQL"
+  },
+  { "title": "Cloud", "icon": "bi-cloud", "tools": "AWS, Digital Ocean" },
+  { "title": "Other", "icon": "bi-box-seam", "tools": "Docker, Testing, Linux" }
+]

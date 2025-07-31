@@ -4,42 +4,38 @@ document.addEventListener("DOMContentLoaded", async function () {
     renderizarProyectos(proyectos);
     const experiencias = await cargarJson("./data/experiencias.json");
     renderizarExperiencia(experiencias);
+    const habilidades = await cargarJson("./data/habilidades.json");
+    renderizarHabilidades(habilidades);
   } catch (err) {
     console.error("Error al cargar los proyectos:", err);
   }
 
-  const formValido = validarForm();
-
   const btn = document.getElementById("buttonContacto");
-  if (formValido) {
 
-    document
-      .getElementById("form")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
+  document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    if (!validarForm()) return;
+    btn.innerHTML = '<i class="bi bi-send"></i> Enviando...';
+    btn.disabled = true;
 
-        btn.innerHTML = '<i class="bi bi-send"></i> Enviando...';
-        btn.disabled = true;
+    const serviceID = "default_service";
+    const templateID = "template_z3irdwa";
 
-        const serviceID = "default_service";
-        const templateID = "template_z3irdwa";
-
-        emailjs.sendForm(serviceID, templateID, this).then(
-          () => {
-            btn.innerHTML = '<i class="bi bi-send"></i> Enviado ✔️';
-            btn.disabled = false;
-            alertaMSG("Mensaje enviado con exito");
-            limpiarForm();
-          },
-          (err) => {
-            btn.innerHTML = '<i class="bi bi-send"></i> Error al enviar';
-            btn.disabled = false;
-            alertaMSG("Error al enviar", "danger");
-            alert("Error: " + JSON.stringify(err));
-          }
-        );
-      });
-  }
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.innerHTML = '<i class="bi bi-send"></i> Enviar mensaje';
+        btn.disabled = false;
+        alertaMSG("Mensaje enviado con exito");
+        limpiarForm();
+      },
+      (err) => {
+        btn.innerHTML = '<i class="bi bi-send"></i> Error al enviar';
+        btn.disabled = false;
+        alertaMSG("Error al enviar", "danger");
+        alert("Error: " + JSON.stringify(err));
+      }
+    );
+  });
 });
 
 async function cargarJson(path) {
@@ -48,6 +44,21 @@ async function cargarJson(path) {
     throw new Error("No se pudo cargar el JSON");
   }
   return await res.json();
+}
+
+function renderizarHabilidades(habilidades) {
+  const container = document.getElementById("skills-container");
+
+  habilidades.forEach((hab) => {
+    container.innerHTML += `
+      <div class="col">
+        <div class="bg-dark p-4 rounded shadow-sm border-bottom border-info">
+          <h5><i class="bi ${hab.icon} me-2 text-info"></i>${hab.title}</h5>
+          <p class="mb-0">${hab.tools}</p>
+        </div>
+      </div>
+    `;
+  });
 }
 
 function renderizarProyectos(proyectos) {
@@ -124,7 +135,10 @@ function renderizarExperiencia(experiencias) {
 }
 
 const limpiarForm = () => {
-  const form = document.getElementById("form").reset();
+  document.getElementById("form").reset();
+  document
+    .querySelectorAll(".is-valid")
+    .forEach((input) => input.classList.remove("is-valid"));
 };
 
 const alertaMSG = (message, type = "success") => {
@@ -145,71 +159,53 @@ const alertaMSG = (message, type = "success") => {
 };
 
 const validarForm = () => {
-  const form = document.getElementById("form");
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+  let isValid = true;
 
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const message = document.getElementById("message");
+  if (name.value.trim() === "" || name.value.length < 3) {
+    setInvalid(name, "El nombre debe tener al menos 3 caracteres");
+    isValid = false;
+  } else setValid(name);
 
-    let isValid = true;
+  if (email.value.trim() === "" || !validateEmail(email.value)) {
+    setInvalid(email, "Ingrese un email válido");
+    isValid = false;
+  } else setValid(email);
 
-    // Validar nombre
-    if (name.value.trim() === "" || name.value.length < 3) {
-      setInvalid(name, "El nombre debe tener al menos 3 caracteres");
-      isValid = false;
-    } else {
-      setValid(name);
-    }
+  if (message.value.trim() === "") {
+    setInvalid(message, "El mensaje no puede estar vacío");
+    isValid = false;
+  } else setValid(message);
 
-    // Validar email
-    if (email.value.trim() === "" || !validateEmail(email.value)) {
-      setInvalid(email, "Ingrese un email válido");
-      isValid = false;
-    } else {
-      setValid(email);
-    }
-
-    // Validar mensaje
-    if (message.value.trim() === "") {
-      setInvalid(message, "El mensaje no puede estar vacío");
-      isValid = false;
-    } else {
-      setValid(message);
-    }
-
-    if (isValid) {
-      console.log("Formulario válido, enviar datos...");
-      // Aquí podrías enviar el formulario con fetch/emailJS
-    }
-  });
-
-  function setInvalid(input, message) {
-    input.classList.remove("is-valid");
-    input.classList.add("is-invalid");
-
-    // Si ya existe mensaje, lo reemplazamos
-    let feedback = input.parentElement.querySelector(".invalid-feedback");
-    if (!feedback) {
-      feedback = document.createElement("div");
-      feedback.className = "invalid-feedback";
-      input.parentElement.appendChild(feedback);
-    }
-    feedback.textContent = message;
-  }
-
-  function setValid(input) {
-    input.classList.remove("is-invalid");
-    input.classList.add("is-valid");
-
-    // Eliminar feedback de error si existe
-    const feedback = input.parentElement.querySelector(".invalid-feedback");
-    if (feedback) feedback.remove();
-  }
-
-  function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
+  return isValid;
 };
+
+function setInvalid(input, message) {
+  input.classList.remove("is-valid");
+  input.classList.add("is-invalid");
+
+  // Si ya existe mensaje, lo reemplazamos
+  let feedback = input.parentElement.querySelector(".invalid-feedback");
+  if (!feedback) {
+    feedback = document.createElement("div");
+    feedback.className = "invalid-feedback";
+    input.parentElement.appendChild(feedback);
+  }
+  feedback.textContent = message;
+}
+
+function setValid(input) {
+  input.classList.remove("is-invalid");
+  input.classList.add("is-valid");
+
+  // Eliminar feedback de error si existe
+  const feedback = input.parentElement.querySelector(".invalid-feedback");
+  if (feedback) feedback.remove();
+}
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
