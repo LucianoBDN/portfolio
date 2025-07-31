@@ -8,30 +8,38 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.error("Error al cargar los proyectos:", err);
   }
 
+  const formValido = validarForm();
+
   const btn = document.getElementById("buttonContacto");
+  if (formValido) {
 
-  document.getElementById("form").addEventListener("submit", function (event) {
-    event.preventDefault();
+    document
+      .getElementById("form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    btn.innerHTML = '<i class="bi bi-send"></i> Enviando...';
-    btn.disabled = true;
+        btn.innerHTML = '<i class="bi bi-send"></i> Enviando...';
+        btn.disabled = true;
 
-    const serviceID = "default_service";
-    const templateID = "template_z3irdwa";
+        const serviceID = "default_service";
+        const templateID = "template_z3irdwa";
 
-    emailjs.sendForm(serviceID, templateID, this).then(
-      () => {
-        btn.innerHTML = '<i class="bi bi-send"></i> Enviado ✔️';
-        btn.disabled = false;
-        limpiarForm();
-      },
-      (err) => {
-        btn.innerHTML = '<i class="bi bi-send"></i> Error al enviar';
-        btn.disabled = false;
-        alert("Error: " + JSON.stringify(err));
-      }
-    );
-  });
+        emailjs.sendForm(serviceID, templateID, this).then(
+          () => {
+            btn.innerHTML = '<i class="bi bi-send"></i> Enviado ✔️';
+            btn.disabled = false;
+            alertaMSG("Mensaje enviado con exito");
+            limpiarForm();
+          },
+          (err) => {
+            btn.innerHTML = '<i class="bi bi-send"></i> Error al enviar';
+            btn.disabled = false;
+            alertaMSG("Error al enviar", "danger");
+            alert("Error: " + JSON.stringify(err));
+          }
+        );
+      });
+  }
 });
 
 async function cargarJson(path) {
@@ -119,8 +127,89 @@ const limpiarForm = () => {
   const form = document.getElementById("form").reset();
 };
 
+const alertaMSG = (message, type = "success") => {
+  const alertPlaceholder = document.getElementById("alerta"); // contenedor de la alerta
+
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = `
+    <div class="alert alert-${type} alert-dismissible fade show mt-3" role="alert">
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  `;
+  alertPlaceholder.append(wrapper);
+  setTimeout(() => {
+    const alertNode = wrapper.querySelector(".alert");
+    if (alertNode) alertNode.remove();
+  }, 3000);
+};
+
 const validarForm = () => {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-}
+  const form = document.getElementById("form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    let isValid = true;
+
+    // Validar nombre
+    if (name.value.trim() === "" || name.value.length < 3) {
+      setInvalid(name, "El nombre debe tener al menos 3 caracteres");
+      isValid = false;
+    } else {
+      setValid(name);
+    }
+
+    // Validar email
+    if (email.value.trim() === "" || !validateEmail(email.value)) {
+      setInvalid(email, "Ingrese un email válido");
+      isValid = false;
+    } else {
+      setValid(email);
+    }
+
+    // Validar mensaje
+    if (message.value.trim() === "") {
+      setInvalid(message, "El mensaje no puede estar vacío");
+      isValid = false;
+    } else {
+      setValid(message);
+    }
+
+    if (isValid) {
+      console.log("Formulario válido, enviar datos...");
+      // Aquí podrías enviar el formulario con fetch/emailJS
+    }
+  });
+
+  function setInvalid(input, message) {
+    input.classList.remove("is-valid");
+    input.classList.add("is-invalid");
+
+    // Si ya existe mensaje, lo reemplazamos
+    let feedback = input.parentElement.querySelector(".invalid-feedback");
+    if (!feedback) {
+      feedback = document.createElement("div");
+      feedback.className = "invalid-feedback";
+      input.parentElement.appendChild(feedback);
+    }
+    feedback.textContent = message;
+  }
+
+  function setValid(input) {
+    input.classList.remove("is-invalid");
+    input.classList.add("is-valid");
+
+    // Eliminar feedback de error si existe
+    const feedback = input.parentElement.querySelector(".invalid-feedback");
+    if (feedback) feedback.remove();
+  }
+
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+};
