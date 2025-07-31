@@ -1,98 +1,214 @@
 [
   {
-  "titulo": "R.E.P.O.",
-  "descripcion": "R.E.P.O. es una aplicación web Full Stack desarrollada para la gestión integral de un servicio de autoservicio de limpieza. Permite al personal administrativo controlar productos, ventas, usuarios y categorías, todo desde una interfaz sencilla e intuitiva.",
-  "imagen": "./assets/img/repoTP.png",
-  "tecnologias": [
-   {
-    "nombre": "HTML",
-    "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
-   },
-   {
-    "nombre": "CSS",
-    "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
-   },
-   {
-    "nombre": "SQL",
-    "icono": "https://cdn-icons-png.flaticon.com/128/7506/7506880.png"
-   },
-   {
-    "nombre": "Node.js",
-    "icono": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
-   },
-   {
-    "nombre": "javascript",
-    "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
-   },
-   {
-    "nombre": "Bootstrap",
-    "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
-   }
-  ],
-  "botones": {
-    "demo": {
-      "texto": "Pruébalo",
-      "url": "https://tu-demo.com",
-      "estilo": "btn btn-pink"
-    },
-    "codigo": {
-      "texto": "Código",
-      "url": "https://github.com/pioacosta/R.E.P.O..TP",
-      "estilo": "btn btn-dark"
-    },
-    "diseño": {
-      "texto": "Diseño",
-      "url": "https://figma.com/tu-prototipo",
-      "estilo": "btn btn-outline-light"
+    "titulo": "R.E.P.O.",
+    "descripcion": "R.E.P.O. es una aplicación web Full Stack desarrollada para la gestión integral de un servicio de autoservicio de limpieza. Permite al personal administrativo controlar productos, ventas, usuarios y categorías, todo desde una interfaz sencilla e intuitiva.",
+    "imagen": "./assets/img/repoTP.png",
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSS",
+        "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+      },
+      {
+        "nombre": "SQL",
+        "icono": "https://cdn-icons-png.flaticon.com/128/7506/7506880.png"
+      },
+      {
+        "nombre": "Node.js",
+        "icono": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+      },
+      {
+        "nombre": "javascript",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+      },
+      {
+        "nombre": "Bootstrap",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/pioacosta/R.E.P.O..TP",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
     }
-  }
-},
+  },
   {
-  "titulo": "R.E.P.O.",
-  "descripcion": "R.E.P.O. es una aplicación web Full Stack desarrollada para la gestión integral de un servicio de autoservicio de limpieza. Permite al personal administrativo controlar productos, ventas, usuarios y categorías, todo desde una interfaz sencilla e intuitiva.",
-  "imagen": "./assets/img/repoTP.png",
-  "tecnologias": [
-   {
-    "nombre": "HTML",
-    "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
-   },
-   {
-    "nombre": "CSS",
-    "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
-   },
-   {
-    "nombre": "SQL",
-    "icono": "https://cdn-icons-png.flaticon.com/128/7506/7506880.png"
-   },
-   {
-    "nombre": "Node.js",
-    "icono": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
-   },
-   {
-    "nombre": "javascript",
-    "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
-   },
-   {
-    "nombre": "Bootstrap",
-    "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
-   }
-  ],
-  "botones": {
-    "demo": {
-      "texto": "Pruébalo",
-      "url": "https://tu-demo.com",
-      "estilo": "btn btn-pink"
-    },
-    "codigo": {
-      "texto": "Código",
-      "url": "https://github.com/pioacosta/R.E.P.O..TP",
-      "estilo": "btn btn-dark"
-    },
-    "diseño": {
-      "texto": "Diseño",
-      "url": "https://figma.com/tu-prototipo",
-      "estilo": "btn btn-outline-light"
+    "titulo": "Gestor de stock de pinturas",
+    "descripcion": "Esta aplicación web permite administrar un inventario de pinturas, con funcionalidades para agregar, modificar, eliminar, filtrar y ordenar los registros, además de generar estadísticas y exportar datos a CSV.",
+    "imagen": "./assets/img/pintureriaProyecto.png",
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSS",
+        "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+      },
+      {
+        "nombre": "javascript",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+      },
+      {
+        "nombre": "Bootstrap",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
+      },
+      {
+        "nombre": "CSV",
+        "icono": "https://cdn-icons-png.flaticon.com/128/6133/6133884.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/LucianoBDN/pintureriaApi?tab=readme-ov-file",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
+    }
+  },
+  {
+    "titulo": "Veterinaria app",
+    "descripcion": "Veterinaria_web es una aplicación web responsive desarrollada como prueba tecnica para ingresar a FOR IT.",
+    "imagen": "./assets/img/vetApp.png",
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSS",
+        "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+      },
+      {
+        "nombre": "typescript",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+      },
+      {
+        "nombre": "React",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1260/1260667.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/LucianoBDN/Veterinaria_web",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
+    }
+  },
+  {
+    "titulo": "¿Quién quiere ser millonario?",
+    "descripcion": "Este proyecto es un juego de preguntas y respuestas interactivo inspirado en el famoso formato televisivo ¿Quién quiere ser millonario?. El jugador debe responder correctamente una serie de preguntas de opción múltiple para avanzar y acumular premios virtuales.",
+    "imagen": "./assets/img/juegoPython.png",
+    "tecnologias": [
+      {
+        "nombre": "Python",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSV",
+        "icono": "https://cdn-icons-png.flaticon.com/128/6133/6133884.png"
+      },
+      {
+        "nombre": "juego",
+        "icono": "https://cdn-icons-png.flaticon.com/128/686/686589.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/LucianoBDN/Quien_quiere_ser_millo_Acosta_Bordon_311_",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
+    }
+  },
+  {
+    "titulo": "SPORTSTRADE",
+    "descripcion": "SPORTSTRADE es un proyecto desarrollado como práctica, combinando Node.js, React y MongoDB para el backend y frontend. El objetivo del proyecto es aplicar conocimientos en desarrollo web full-stack, incluyendo integración de base de datos.",
+    "imagen": "./assets/img/sportstrade.png",
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSS",
+        "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+      },
+      {
+        "nombre": "javascript",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+      },
+      {
+        "nombre": "React",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1260/1260667.png"
+      },
+      {
+        "nombre": "MongoDB",
+        "icono": "https://cdn-icons-png.flaticon.com/128/9672/9672242.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/LucianoBDN/Quien_quiere_ser_millo_Acosta_Bordon_311_",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
     }
   }
-}
 ]

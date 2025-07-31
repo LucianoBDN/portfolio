@@ -32,7 +32,13 @@
       emailjs.init("1OiiO4XmJAFLDIAL4");
     </script>
   </head>
-  <body class="text-white bg-personalizado">
+  <body
+    class="text-white bg-personalizado"
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-offset="70"
+    tabindex="0"
+  >
     <header></header>
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-personalizado px-3 fixed-top"
@@ -80,9 +86,9 @@
             />
           </div>
           <div class="col-11 col-md-6 col-lg-5">
-            <h2 class="text-info fw-bold fs-1 fs-lg-display-4">
+            <h1 class="text-info fw-bold fs-1 fs-lg-display-4">
               Luciano Bordón
-            </h2>
+            </h1>
             <p class="fs-5 fs-lg-4">
               Programador y estudiante de la Tecnicatura Universitaria en
               Programación (UTN), con experiencia práctica en proyectos reales.
@@ -122,7 +128,7 @@
           <i class="bi bi-code-slash"></i> PROYECTOS
         </h2>
 
-        <div id="proyectos" class="container py-5">
+        <div class="container py-5">
           <div
             id="carouselProyectos"
             class="carousel slide"
@@ -159,12 +165,13 @@
         </h2>
         <div id="timeline" class="timeline"></div>
       </div>
-<section id="habilidades" class="container py-5 text-white">
- <h2 class="text-info fw-bold mb-4">
-    <i class="bi bi-lightbulb text-info me-2"></i>HABILIDADES
-  </h2>
-  <div id="skills-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
-</section>
+    </section>
+    <section id="habilidades" class="container py-5 text-white">
+      <h2 class="text-info fw-bold mb-4">
+        <i class="bi bi-lightbulb text-info me-2"></i>HABILIDADES
+      </h2>
+      <div id="skills-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </section>
     <section id="contacto" class="py-5">
       <div class="container">
         <h2 class="text-info fw-bold mb-4">
@@ -177,7 +184,7 @@
               <label for="name" class="form-label text-white">Name</label>
               <input
                 type="text"
-                class="form-control form-bg text-white border-0 placeholder-custom rounded-3"
+                class="form-control bg-dark text-white border-0 placeholder-custom rounded-3"
                 id="name"
                 name="name"
                 placeholder="Enter your name"
@@ -187,7 +194,7 @@
               <label for="email" class="form-label text-white">Email</label>
               <input
                 type="email"
-                class="form-control form-bg text-white border-0 placeholder-custom rounded-3"
+                class="form-control bg-dark text-white border-0 placeholder-custom rounded-3"
                 id="email"
                 name="email"
                 placeholder="Enter your email"
@@ -196,7 +203,7 @@
             <div class="col-12">
               <label for="message" class="form-label text-white">Message</label>
               <textarea
-                class="form-control form-bg text-white border-0 placeholder-custom rounded-3"
+                class="form-control bg-dark text-white border-0 placeholder-custom rounded-3"
                 id="message"
                 name="message"
                 rows="5"

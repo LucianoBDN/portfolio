@@ -1,12 +1,12 @@
 [
   {
-    "fecha": "01/2024 - 06/2024",
-    "puesto": "Desarrollador Backend",
-    "descripcion": "Durante más de 5 meses, trabajé en un equipo de 8 personas en el desarrollo de una aplicación para el intercambio de servicios entre vecinos..."
+    "fecha": "08/2024 - Actualidad",
+    "puesto": "Analista de Datos",
+    "descripcion": "Desde Hace un año trabajo como analista de datos trainee para Arbusta, mis principales tareas son: La moderacion y etiquetado de items para Mercado Libre y la creacion de Informes de datos utilizando las Herramientas de Google."
   },
   {
-    "fecha": "08/2023 - 10/2023",
-    "puesto": "Desarrollador Full Stack",
-    "descripcion": "En dos meses, desarrollé de manera individual una aplicación para gestionar pedidos, pagos y mesas en restaurantes..."
+    "fecha": "06/2025 - 07/2025",
+    "puesto": "Desarrollador Full Stack (Proyecto R.E.P.O.)",
+    "descripcion": "Desarrollé junto a un compañero de cursada una aplicación web para gestionar pedidos, pagos y mesas en restaurantes. El proyecto incluye autenticación segura, carrito de compras, gestión de productos y dashboard administrativo. Utilicé Node.js, Express, EJS y una base de datos relacional con ORM."
   }
 ]

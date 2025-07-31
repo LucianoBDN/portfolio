@@ -51,7 +51,7 @@ function renderizarHabilidades(habilidades) {
 
   habilidades.forEach((hab) => {
     container.innerHTML += `
-      <div class="col">
+      <div class="col-12 col-lg-6">
         <div class="bg-dark p-4 rounded shadow-sm border-bottom border-info">
           <h5><i class="bi ${hab.icon} me-2 text-info"></i>${hab.title}</h5>
           <p class="mb-0">${hab.tools}</p>
@@ -86,7 +86,7 @@ function renderizarProyectos(proyectos) {
       <div class="d-flex justify-content-center py-5">
         <div class="card text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 900px;">
           <img src="${proyecto.imagen}" class="card-img-top rounded-top" alt="${proyecto.titulo}">
-          <div class="card-body text-center">
+          <div class="card-body bg-dark text-center">
             <h5 class="card-title text-info fw-bold">${proyecto.titulo}</h5>
             <p class="card-text small">${proyecto.descripcion}</p>
 
@@ -98,10 +98,10 @@ function renderizarProyectos(proyectos) {
               <a href="${proyecto.botones.demo.url}" class="btn-carrousel btn-demo btn-sm" target="_blank">
                 <i class="bi bi-link-45deg"></i> ${proyecto.botones.demo.texto}
               </a>
-              <a href="${proyecto.botones.codigo.url}" class="btn-carrousel btn-code btn-sm" target="_blank">
+              <a href="${proyecto.botones.codigo.url}" class="btn-carrousel btn-custom btn-sm" target="_blank">
                 <i class="bi bi-github i-codigo"></i> ${proyecto.botones.codigo.texto}
               </a>
-              <a href="${proyecto.botones.diseño.url}" class="btn-carrousel btn-desing btn-sm" target="_blank">
+              <a href="${proyecto.botones.diseño.url}" class="btn-carrousel btn-custom btn-sm" target="_blank">
                 <i class="bi bi-brush"></i> ${proyecto.botones.diseño.texto}
               </a>
             </div>
@@ -122,7 +122,7 @@ function renderizarExperiencia(experiencias) {
     item.className = "timeline-item";
     item.innerHTML = `
       <span class="timeline-dot"></span>
-      <div class="timeline-content">
+      <div class="timeline-content bg-dark">
         <p class="date mb-2">
           <i class="bi bi-calendar3 me-2"></i> ${exp.fecha}
         </p>
