@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.error("Error al cargar los proyectos:", err);
   }
 
+  scrollTarget()
   const btn = document.getElementById("buttonContacto");
 
   document.getElementById("form").addEventListener("submit", function (event) {
@@ -84,7 +85,7 @@ function renderizarProyectos(proyectos) {
 
     item.innerHTML = `
       <div class="d-flex justify-content-center py-5">
-        <div class="card text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 900px;">
+        <div class="card text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 10200px;">
           <img src="${proyecto.imagen}" class="card-img-top rounded-top" alt="${proyecto.titulo}">
           <div class="card-body bg-dark text-center">
             <h5 class="card-title text-info fw-bold">${proyecto.titulo}</h5>
@@ -208,4 +209,30 @@ function setValid(input) {
 
 function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+
+function scrollTarget(){
+   const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const offset = 100; // altura del navbar fijo
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const top = section.offsetTop - offset;
+      const bottom = top + section.offsetHeight;
+      if (window.scrollY >= top && window.scrollY < bottom) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
 }
