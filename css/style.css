@@ -6,7 +6,7 @@ body {
   padding-top: 70px;
 }
 .bg-personalizado {
-  background-color: #111827 !important;
+  background-color: #192646 !important;
 }
 
 /* navbar */
@@ -19,12 +19,22 @@ body {
 }
 
 .nav-link:hover {
-  color: #0dcaf0 !important; /* celeste */
+  color: #FF4C61 !important; /* celeste */
 }
 
 .nav-link.active {
   color: #dc3545 !important; /* rojo */
 }
+
+
+/* sobremi */
+.title-Section {
+  color: #FF4C61 !important; /* celeste/turquesa */
+}
+.color-base {
+  color: #FF4C61 !important; /* celeste/turquesa */
+}
+
 
 /* sectons */
 section {
@@ -84,7 +94,7 @@ section {
 }
 
 .btn-custom {
-  border: 2px solid #4361ee;
+  border: 2px solid #C62828;
   border-radius: 10px;
   padding: 10px 20px;
 }
@@ -97,9 +107,9 @@ section {
 }
 
 .btn-custom:hover {
-  background-color: #4361ee;
+  background-color: #C62828;
   color: white;
-  box-shadow: 0 4px 10px rgba(67, 97, 238, 0.4);
+  box-shadow: 0 4px 10px #C62828;
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
@@ -109,20 +119,22 @@ section {
   transition: all 0.3s ease;
 }
 
-/* icono del boton */
-
-.bi-brush {
-  color: #f72585;
-}
-.i-codigo {
-  color: #f72585;
-}
-
-.btn-desing {
-  border: 2px solid #4361ee;
+button.btn-carrousel.btn-custom {
+  background-color: transparent; /* o un color oscuro, ej. #111827 */
+  color: white;
+  border: 2px solid #C62828;
+  border-radius: 10px;
   padding: 10px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
+button.btn-carrousel.btn-custom:hover {
+  background-color: #C62828;
+  color: white;
+  box-shadow: 0 4px 10px #C62828;
+  transform: scale(1.05);
+}
 /* experiencia */
 .timeline {
   position: relative;

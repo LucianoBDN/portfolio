@@ -44,7 +44,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-personalizado px-3 fixed-top"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-info" href="#">LucianoBDN</a>
+        <a class="navbar-brand fw-bold title-Section" href="#">LucianoBDN</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -74,19 +74,19 @@
     </nav>
     <section
       id="sobre-mi"
-      class="d-flex align-items-center justify-content-center min-vh-100 text-light border-top border-info"
+      class="d-flex align-items-center justify-content-center min-vh-100 text-light border-top"
     >
       <div class="container-fluid px-5">
         <div class="row align-items-center justify-content-center">
           <div class="col-10 col-md-5 col-lg-4 text-center mb-4 mb-md-0">
             <img
-              src="./assets/img/Lucho.png"
+              src="./assets/img/luchoo.png"
               alt="Foto Luciano"
-              class="img-fluid rounded shadow w-100 w-md-50 w-lg-100"
+              class="img-fluid rounded w-75 w-md-50 w-lg-100"
             />
           </div>
           <div class="col-11 col-md-6 col-lg-5">
-            <h1 class="text-info fw-bold fs-1 fs-lg-display-4">
+            <h1 class="title-Section fw-bold fs-1 fs-lg-display-4">
               Luciano Bordón
             </h1>
             <p class="fs-5 fs-lg-4">
@@ -124,9 +124,7 @@
 
     <section id="proyectos" class="py-1 bg-personalizado text-white">
       <div class="container py-2">
-        <h2 class="text-info fw-bold mb-4">
-          <i class="bi bi-code-slash"></i> PROYECTOS
-        </h2>
+        <h2 class="fw-bold mb-4"><i class="bi bi-code-slash"></i> PROYECTOS</h2>
 
         <div class="container py-5">
           <div
@@ -160,22 +158,22 @@
     </section>
     <section id="experiencia">
       <div class="container py-5">
-        <h2 class="text-info fw-bold mb-4">
-          <i class="bi bi-briefcase-fill text-info me-2 fs-4"></i> EXPERIENCIA
+        <h2 class="fw-bold mb-4">
+          <i class="bi bi-briefcase-fill me-2 fs-4"></i> EXPERIENCIA
         </h2>
         <div id="timeline" class="timeline"></div>
       </div>
     </section>
     <section id="habilidades" class="container py-5 text-white">
-      <h2 class="text-info fw-bold mb-4">
-        <i class="bi bi-lightbulb text-info me-2"></i>HABILIDADES
+      <h2 class="fw-bold mb-4">
+        <i class="bi bi-lightbulb me-2"></i>HABILIDADES
       </h2>
       <div id="skills-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
     </section>
     <section id="contacto" class="py-5">
       <div class="container">
-        <h2 class="text-info fw-bold mb-4">
-          <i class="bi bi-send-fill text-info me-2 fs-4"></i> CONTÁCTAME
+        <h2 class="fw-bold mb-4">
+          <i class="bi bi-send-fill me-2 fs-4"></i> CONTÁCTAME
         </h2>
 
         <form id="form" class="contacto p-4 rounded container">
@@ -184,7 +182,7 @@
               <label for="name" class="form-label text-white">Name</label>
               <input
                 type="text"
-                class="form-control bg-dark text-white border-0 placeholder-custom rounded-3"
+                class="form-control form-control-lg bg-dark text-white border-0 placeholder-custom rounded-3"
                 id="name"
                 name="name"
                 placeholder="Enter your name"
@@ -194,7 +192,7 @@
               <label for="email" class="form-label text-white">Email</label>
               <input
                 type="email"
-                class="form-control bg-dark text-white border-0 placeholder-custom rounded-3"
+                class="form-control form-control-lg bg-dark text-white border-0 placeholder-custom rounded-3"
                 id="email"
                 name="email"
                 placeholder="Enter your email"
@@ -206,7 +204,7 @@
                 class="form-control bg-dark text-white border-0 placeholder-custom rounded-3"
                 id="message"
                 name="message"
-                rows="5"
+                rows="10"
                 placeholder="Enter your message"
               ></textarea>
             </div>
@@ -218,7 +216,7 @@
             <button
               type="submit"
               id="buttonContacto"
-              class="btn btn-outline-info d-flex align-items-center gap-2 px-4 py-2 rounded-3"
+              class="btn-carrousel btn-custom btn-sm d-flex align-items-center gap-2"
             >
               <i class="bi bi-send"></i> Enviar mensaje
             </button>
@@ -227,67 +225,67 @@
       </div>
     </section>
     <footer
-      class="bg-personalizado text-white pt-5 pb-4 border-top border-info"
+      class="bg-personalizado text-white pt-5 pb-4 border-top "
     >
       <div class="container text-center text-md-start">
         <div class="row">
           <div class="col-md-6 col-lg-6 mb-4">
-            <h5 class="fw-bold text-info">Luciano Bordón</h5>
+            <h5 class="fw-bold title-Section">Luciano Bordón</h5>
             <p>
               Programador enfocado en el desarrollo y la mejora continua.
               Gracias por visitar mi portfolio.
             </p>
           </div>
           <div class="col-md-3 col-lg-3 mb-4">
-            <h6 class="text-uppercase fw-bold text-info mb-3">Secciones</h6>
+            <h6 class="text-uppercase fw-bold title-Section mb-3">Secciones</h6>
             <ul class="list-unstyled">
               <li>
-                <a href="#proyectos" class="text-white text-decoration-none"
+                <a href="#proyectos" class="nav-link text-white text-decoration-none"
                   >Proyectos</a
                 >
               </li>
               <li>
-                <a href="#experiencia" class="text-white text-decoration-none"
+                <a href="#experiencia" class="nav-link text-white text-decoration-none"
                   >Experiencia</a
                 >
               </li>
               <li>
-                <a href="#habilidades" class="text-white text-decoration-none"
+                <a href="#habilidades" class="nav-link text-white text-decoration-none"
                   >Habilidades</a
                 >
               </li>
               <li>
-                <a href="#contacto" class="text-white text-decoration-none"
+                <a href="#contacto" class="nav-link text-white text-decoration-none"
                   >Contacto</a
                 >
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-lg-3 mb-4">
-            <h6 class="text-uppercase fw-bold text-info mb-3">Redes</h6>
+            <h6 class="text-uppercase fw-bold title-Section mb-3">Redes</h6>
             <div class="d-flex gap-3">
               <a
                 href="https://www.linkedin.com/in/luciano-bordonn/"
                 target="_blank"
-                class="text-white fs-5"
+                class="nav-link text-white fs-5"
               >
                 <i class="bi bi-linkedin"></i>
               </a>
               <a
                 href="https://github.com/LucianoBDN"
                 target="_blank"
-                class="text-white fs-5"
+                class="nav-link text-white fs-5"
               >
                 <i class="bi bi-github"></i>
               </a>
-              <a href="mailto:tu-correo@email.com" class="text-white fs-5">
+              <a href="mailto:tu-correo@email.com" class="nav-link text-white fs-5">
                 <i class="bi bi-envelope-fill"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <hr class="border-info" />
+        <hr class="" />
 
         <div class="text-center">
           <small class="text-white-50"

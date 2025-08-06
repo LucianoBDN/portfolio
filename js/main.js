@@ -53,9 +53,9 @@ function renderizarHabilidades(habilidades) {
   habilidades.forEach((hab) => {
     container.innerHTML += `
       <div class="col-12 col-lg-6">
-        <div class="bg-dark p-4 rounded shadow-sm border-bottom border-info">
-          <h5><i class="bi ${hab.icon} me-2 text-info"></i>${hab.title}</h5>
-          <p class="mb-0">${hab.tools}</p>
+        <div class="bg-dark p-4 rounded shadow-sm border-bottom ">
+          <h5><i class="bi ${hab.icon} me-2 "></i>${hab.title}</h5>
+          <p class="color-base mb-0">${hab.tools}</p>
         </div>
       </div>
     `;
