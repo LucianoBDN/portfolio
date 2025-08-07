@@ -2,11 +2,17 @@
   {
     "fecha": "08/2024 - Actualidad",
     "puesto": "Analista de Datos",
-    "descripcion": "Desde Hace un año trabajo como analista de datos trainee para Arbusta, mis principales tareas son: La moderacion y etiquetado de items para Mercado Libre y la creacion de Informes de datos utilizando las Herramientas de Google."
+    "descripcion": "Trabajo como analista de datos para Arbusta, mis principales tareas son: La moderacion y etiquetado de items para Mercado Libre y la creacion de Informes de datos utilizando las Herramientas de Google."
   },
   {
     "fecha": "06/2025 - 07/2025",
     "puesto": "Desarrollador Full Stack (Proyecto R.E.P.O.)",
-    "descripcion": "Desarrollé junto a un compañero de cursada una aplicación web para gestionar pedidos, pagos y mesas en restaurantes. El proyecto incluye autenticación segura, carrito de compras, gestión de productos y dashboard administrativo. Utilicé Node.js, Express, EJS y una base de datos relacional con ORM."
+    "descripcion": "Desarrollé junto a un compañero de cursada una aplicación web para gestionar pedidos. El proyecto incluye autenticación segura, carrito de compras, gestión de productos y dashboard administrativo. Utilicé Node.js, Express, EJS y una base de datos relacional con ORM sequelize."
+  }
+  ,
+  {
+    "fecha": "06/2025 - 07/2025",
+    "puesto": "Desarrollador Full Stack (Proyecto SportStrade)",
+    "descripcion": "Desarrollé junto a un equipo en la cursada de diplomatura de desarrollo we full stack una aplicación web para gestionar pedidos y pagos en una tienda online. Utilicé Node.js, Express, EJS y una base de datos no relacional con ORM mongoose."
   }
 ]

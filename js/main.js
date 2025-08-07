@@ -1,3 +1,7 @@
+let certificadosGlobal = []; 
+let indiceInicio = 0;        
+const cantidadPorPagina = 3; 
+
 document.addEventListener("DOMContentLoaded", async function () {
   try {
     const proyectos = await cargarJson("./data/proyectos.json");
@@ -6,11 +10,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     renderizarExperiencia(experiencias);
     const habilidades = await cargarJson("./data/habilidades.json");
     renderizarHabilidades(habilidades);
+    certificadosGlobal = await cargarJson("./data/certificados.json"); 
+    renderizarCertificados();
   } catch (err) {
     console.error("Error al cargar los proyectos:", err);
   }
 
-  scrollTarget()
+  scrollTarget();
   const btn = document.getElementById("buttonContacto");
 
   document.getElementById("form").addEventListener("submit", function (event) {
@@ -46,6 +52,52 @@ async function cargarJson(path) {
   }
   return await res.json();
 }
+
+function renderizarCertificados() {
+  const container = document.getElementById("certificados-container");
+  container.innerHTML = "";
+
+  const certificadosMostrar = certificadosGlobal.slice(
+    indiceInicio,
+    indiceInicio + cantidadPorPagina
+  );
+
+  certificadosMostrar.forEach((cert) => {
+    container.innerHTML += `
+      <div class="col">
+        <div class="card card-certificado h-100 border-0">
+          <div class="card-img-overlay d-flex align-items-center justify-content-center overlay-title">
+            <h5 class="text-white text-center fw-bold m-0">${cert.titulo}</h5>
+          </div>
+          <img src="${cert.imagen}" class="card-img-top img-certificado" alt="${cert.titulo}" />
+        </div>
+      </div>
+    `;
+  });
+
+  actualizarEstadoBotones();
+}
+
+function actualizarEstadoBotones() {
+  document.getElementById("btn-anterior").disabled = indiceInicio === 0;
+  document.getElementById("btn-siguiente").disabled =
+    indiceInicio + cantidadPorPagina >= certificadosGlobal.length;
+}
+
+document.getElementById("btn-anterior").addEventListener("click", () => {
+  if (indiceInicio > 0) {
+    indiceInicio -= cantidadPorPagina;
+    renderizarCertificados();
+  }
+});
+
+document.getElementById("btn-siguiente").addEventListener("click", () => {
+  if (indiceInicio + cantidadPorPagina < certificadosGlobal.length) {
+    indiceInicio += cantidadPorPagina;
+    renderizarCertificados();
+  }
+});
+
 
 function renderizarHabilidades(habilidades) {
   const container = document.getElementById("skills-container");
@@ -211,16 +263,15 @@ function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-
-function scrollTarget(){
-   const sections = document.querySelectorAll("section");
+function scrollTarget() {
+  const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
   const offset = 100; // altura del navbar fijo
 
   window.addEventListener("scroll", () => {
     let current = "";
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const top = section.offsetTop - offset;
       const bottom = top + section.offsetHeight;
       if (window.scrollY >= top && window.scrollY < bottom) {
@@ -228,7 +279,7 @@ function scrollTarget(){
       }
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       link.classList.remove("active");
       if (link.getAttribute("href").includes(current)) {
         link.classList.add("active");

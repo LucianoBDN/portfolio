@@ -169,7 +169,7 @@
   },
   {
     "titulo": "SPORTSTRADE",
-    "descripcion": "SPORTSTRADE es un proyecto desarrollado como práctica, combinando Node.js, React y MongoDB para el backend y frontend. El objetivo del proyecto es aplicar conocimientos en desarrollo web full-stack, incluyendo integración de base de datos.",
+    "descripcion": "SPORTSTRADE es un proyecto desarrollado como Evaluacion del curso de desarollo we full stack en UTN, combinando Node.js, React y MongoDB para el backend y frontend. El objetivo del proyecto es aplicar conocimientos en desarrollo web full-stack, incluyendo integración de base de datos.",
     "imagen": "./assets/img/sportstrade.png",
     "tecnologias": [
       {

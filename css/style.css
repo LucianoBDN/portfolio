@@ -42,6 +42,13 @@ section {
   padding-bottom: 100px;
 }
 
+#proyectos {
+  min-height: 90vh;
+}
+#certificados {
+  min-height: 80vh;
+}
+
 #habilidades {
   min-height: 60vh;
 }
@@ -50,14 +57,53 @@ section {
   min-height: 80vh;
 }
 
+/* certificados */
+.card-certificado {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 
+.card-certificado:hover {
+  transform: scale(1.03);
+}
+
+.img-certificado {
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative; /* importante */
+  z-index: 1; /* pone la imagen detrás del overlay */
+}
+
+.card-certificado:hover .img-certificado {
+  transform: scale(1.05);
+}
+
+.overlay-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 2; /* el overlay está por encima de la imagen */
+  transition: opacity 0.3s ease;
+}
+
+.card-certificado:hover .overlay-title {
+  opacity: 1;
+}
 /* btn sobre mi */
 .btn-background{
   background-color: #FF4C61 !important;
 }
 .btn-background:hover{
   /* background-color: #C62828 !important; */
-    transform: scale(1.05);
+    transform: scale(1.15);
   transition: all 0.3s ease;
 }
 
@@ -103,11 +149,6 @@ section {
   padding: 10px 20px;
 }
 
-.btn-custom {
-  border: 2px solid #C62828;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
 
 .btn-demo:hover {
   background-color: #d61c6f !important;
@@ -116,12 +157,36 @@ section {
   transition: all 0.3s ease;
 }
 
+.btn-custom {
+  border: 2px solid #C62828;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: transparent; /* Fondo vacío */
+  color: #ffff; /* Texto del mismo color del borde */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
 .btn-custom:hover {
+  background-color: #C62828; /* Fondo cuando pasa el mouse */
+  color: white; /* Texto blanco cuando está en hover */
+  box-shadow: 0 4px 10px rgba(198, 40, 40, 0.4);
+  transform: scale(1.05);
+}
+
+.btn-custom:not(:disabled):hover {
   background-color: #C62828;
   color: white;
   box-shadow: 0 4px 10px #C62828;
   transform: scale(1.05);
-  transition: all 0.3s ease;
+}
+
+/* Estilo cuando está deshabilitado */
+.btn-custom:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: transparent;
+  color: #C62828;
 }
 
 .btn-hover-effect:hover {

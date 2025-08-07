@@ -1,5 +1,5 @@
 [
-  { "title": "UI/UX", "icon": "bi-vector-pen", "tools": "Figma, Whimsical" },
+  { "title": "UI/UX", "icon": "bi-vector-pen", "tools": "Figma, Canva" },
   {
     "title": "Frontend",
     "icon": "bi-laptop",
@@ -13,8 +13,8 @@
   {
     "title": "Database",
     "icon": "bi-database",
-    "tools": "MongoDB, MySQL, PostgreSQL"
+    "tools": "MongoDB, MySQL"
   },
-  { "title": "Cloud", "icon": "bi-cloud", "tools": "AWS, Digital Ocean" },
-  { "title": "Other", "icon": "bi-box-seam", "tools": "Docker, Testing, Linux" }
+  { "title": "Cloud", "icon": "bi-cloud", "tools": "AWS(en curso)" },
+  { "title": "Other", "icon": "bi-box-seam", "tools": "Linux" }
 ]

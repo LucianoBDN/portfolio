@@ -39,7 +39,7 @@
     data-bs-offset="80"
     tabindex="0"
   >
-      <header>
+    <header>
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-personalizado px-3 fixed-top"
       >
@@ -66,13 +66,16 @@
                 <a class="nav-link" href="#habilidades">Habilidades</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#certificados">Certificados</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      </header>
+    </header>
     <section
       id="sobre-mi"
       class="d-flex align-items-center justify-content-center min-vh-100 text-light border-top"
@@ -91,16 +94,10 @@
               Luciano Bordón
             </h1>
             <p class="fs-5 fs-lg-4">
-              Programador y estudiante de la Tecnicatura Universitaria en
-              Programación (UTN), con experiencia práctica en proyectos reales.
-              Donde trabajé desde el backend hasta el frontend. Me apasiona
-              aprender, mejorar constantemente y aplicar lo que estudio en la
-              práctica. Implementé metodologías ágiles como SCRUM en mis
-              proyectos y estoy listo para llevar esas prácticas al mundo
-              laboral. También tengo experiencia trabajando con Node.js,
-              Express, React, bases de datos relacionales, y cuidando cada
-              detalle como validaciones, diseño responsivo, y estructura clara
-              del código.
+              Soy estudiante de la Tecnicatura en Programación (UTN) y ya tuve
+              experiencia trabajando en proyectos reales, desde el backend hasta
+              el frontend. Uso tecnologías como Node.js, Express, React y bases
+              de datos. Me gusta aprender, mejorar y aplicar lo que aprendo.
             </p>
             <div class="mt-4 d-flex gap-3 flex-wrap">
               <a
@@ -171,6 +168,25 @@
       </h2>
       <div id="skills-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
     </section>
+    <section id="certificados" class="container py-5 text-white">
+      <h2 class="fw-bold mb-4">
+        <i class="bi bi-patch-check-fill me-2"></i>CERTIFICADOS
+      </h2>
+
+      <div
+        id="certificados-container"
+        class="row row-cols-1 row-cols-md-3 g-4 mb-4"
+      ></div>
+
+      <div class="d-flex justify-content-center gap-3">
+        <button id="btn-anterior" class="btn-custom btn-background ">
+          Anterior
+        </button>
+        <button id="btn-siguiente" class="btn-custom btn-background ">
+          Siguiente
+        </button>
+      </div>
+    </section>
     <section id="contacto" class="py-5">
       <div class="container">
         <h2 class="fw-bold mb-4">
@@ -225,9 +241,7 @@
         </form>
       </div>
     </section>
-    <footer
-      class="bg-personalizado text-white pt-5 pb-4 border-top "
-    >
+    <footer class="bg-personalizado text-white pt-5 pb-4 border-top">
       <div class="container text-center text-md-start">
         <div class="row">
           <div class="col-md-6 col-lg-6 mb-4">
@@ -241,22 +255,30 @@
             <h6 class="text-uppercase fw-bold title-Section mb-3">Secciones</h6>
             <ul class="list-unstyled">
               <li>
-                <a href="#proyectos" class="nav-link text-white text-decoration-none"
+                <a
+                  href="#proyectos"
+                  class="nav-link text-white text-decoration-none"
                   >Proyectos</a
                 >
               </li>
               <li>
-                <a href="#experiencia" class="nav-link text-white text-decoration-none"
+                <a
+                  href="#experiencia"
+                  class="nav-link text-white text-decoration-none"
                   >Experiencia</a
                 >
               </li>
               <li>
-                <a href="#habilidades" class="nav-link text-white text-decoration-none"
+                <a
+                  href="#habilidades"
+                  class="nav-link text-white text-decoration-none"
                   >Habilidades</a
                 >
               </li>
               <li>
-                <a href="#contacto" class="nav-link text-white text-decoration-none"
+                <a
+                  href="#contacto"
+                  class="nav-link text-white text-decoration-none"
                   >Contacto</a
                 >
               </li>
@@ -279,7 +301,10 @@
               >
                 <i class="bi bi-github"></i>
               </a>
-              <a href="mailto:tu-correo@email.com" class="nav-link text-white fs-5">
+              <a
+                href="mailto:tu-correo@email.com"
+                class="nav-link text-white fs-5"
+              >
                 <i class="bi bi-envelope-fill"></i>
               </a>
             </div>
@@ -289,9 +314,7 @@
         <hr class="" />
 
         <div class="text-center">
-          <small class="text-white-50"
-            >&copy; 2025 Luciano Bordón.</small
-          >
+          <small class="text-white-50">&copy; 2025 Luciano Bordón.</small>
         </div>
       </div>
     </footer>
