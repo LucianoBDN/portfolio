@@ -85,7 +85,7 @@ function renderizarProyectos(proyectos) {
 
     item.innerHTML = `
       <div class="d-flex justify-content-center py-5">
-        <div class="card text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 10200px;">
+        <div class="card text-white border-0 shadow-lg rounded-4 w-100" style="max-width: 900px;">
           <img src="${proyecto.imagen}" class="card-img-top rounded-top" alt="${proyecto.titulo}">
           <div class="card-body bg-dark text-center">
             <h5 class="card-title text-info fw-bold">${proyecto.titulo}</h5>

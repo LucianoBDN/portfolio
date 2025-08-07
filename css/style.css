@@ -39,7 +39,6 @@ body {
 /* sectons */
 section {
   scroll-margin-top: 80px;
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -48,9 +47,20 @@ section {
 }
 
 #experiencia {
-  margin-top: 50px;
   min-height: 80vh;
 }
+
+
+/* btn sobre mi */
+.btn-background{
+  background-color: #FF4C61 !important;
+}
+.btn-background:hover{
+  /* background-color: #C62828 !important; */
+    transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 
 /* carrousel */
 
