@@ -2,7 +2,7 @@
   {
     "titulo": "R.E.P.O.",
     "descripcion": "R.E.P.O. es una aplicación web Full Stack desarrollada para la gestión integral de un servicio de autoservicio de limpieza. Permite al personal administrativo controlar productos, ventas, usuarios y categorías, todo desde una interfaz sencilla e intuitiva.",
-    "imagen": "./assets/img/repoTP.png",
+    "imagen": "assets/img/RepoTP.png",
     "tecnologias": [
       {
         "nombre": "HTML",
@@ -50,7 +50,7 @@
   {
     "titulo": "Gestor de stock de pinturas",
     "descripcion": "Esta aplicación web permite administrar un inventario de pinturas, con funcionalidades para agregar, modificar, eliminar, filtrar y ordenar los registros, además de generar estadísticas y exportar datos a CSV.",
-    "imagen": "./assets/img/pintureriaProyecto.png",
+    "imagen": "assets/img/PintureriaProyecto.png",
     "tecnologias": [
       {
         "nombre": "HTML",
