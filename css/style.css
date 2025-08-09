@@ -63,6 +63,7 @@ section {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
+  /* No height fijo */
 }
 
 .card-certificado:hover {
@@ -71,11 +72,11 @@ section {
 
 .img-certificado {
   transition: transform 0.3s ease;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: relative; /* importante */
-  z-index: 1; /* pone la imagen detrás del overlay */
+  width: 100%;       /* Se ajusta al ancho del contenedor */
+  height: auto;      /* Altura automática proporcional */
+  position: relative;
+  z-index: 1;
+  object-fit: unset; /* o simplemente sacá esta línea */
 }
 
 .card-certificado:hover .img-certificado {

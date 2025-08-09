@@ -1,6 +1,6 @@
 let certificadosGlobal = []; 
 let indiceInicio = 0;        
-const cantidadPorPagina = 3; 
+const cantidadPorPagina = 2; 
 
 document.addEventListener("DOMContentLoaded", async function () {
   try {
@@ -64,12 +64,14 @@ function renderizarCertificados() {
 
   certificadosMostrar.forEach((cert) => {
     container.innerHTML += `
-      <div class="col">
+      <div class="col-lg col-md-6">
         <div class="card card-certificado h-100 border-0">
           <div class="card-img-overlay d-flex align-items-center justify-content-center overlay-title">
             <h5 class="text-white text-center fw-bold m-0">${cert.titulo}</h5>
           </div>
-          <img src="${cert.imagen}" class="card-img-top img-certificado" alt="${cert.titulo}" />
+          <a href="${cert.pdf}" target="_blank">
+            <img src="${cert.imagen}" class="card-img-top img-certificado" alt="${cert.titulo}" />
+          </a>
         </div>
       </div>
     `;

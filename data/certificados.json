@@ -1,33 +1,58 @@
 [
   {
-    "titulo": "Curso de JavaScript - Coderhouse",
-    "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"
+    "titulo": "Desarrollo web Full Stack - UTN",
+    "imagen": "assets/img/certficados/desarrolladorWebFullStack.png"
   },
   {
-    "titulo": "Curso de React - UTN",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Python - Arbusta",
+    "imagen": "assets/img/certficados/python.png"
+  },
   {
-    "titulo": "Curso de JavaScript - Coderhouse",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "git y Github - Arbusta",
+    "imagen": "assets/img/certficados/gitGithub.png"
+  },
   {
-    "titulo": "Curso de React - UTN",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Fundamentos y logica de Programacion - Arbusta",
+    "imagen": "assets/img/certficados/logicaProg.png"
+  },
   {
-    "titulo": "Curso de JavaScript - Coderhouse",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Base de Datos - Arbusta",
+    "imagen": "assets/img/certficados/baseDeDatos.png"
+  },
   {
-    "titulo": "Curso de React - UTN",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Analisis de datos con Power BI - Crehana",
+    "imagen": "assets/img/certficados/analisisDeDatosPWBI.png"
+  },
   {
-    "titulo": "Curso de JavaScript - Coderhouse",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Principios Power BI - Crehana",
+    "imagen": "assets/img/certficados/principiosPowerbi.png"
+  },
   {
-    "titulo": "Curso de React - UTN",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Power BI para la toma de decisiones - Crehana",
+    "imagen": "assets/img/certficados/powerBITomaDecisiones.png"
+  },
   {
-    "titulo": "Curso de JavaScript - Coderhouse",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  },
+    "titulo": "Analiza datos con Power BI - Crehana",
+    "imagen": "assets/img/certficados/AnalizarDatosConPwBI.png"
+  },
   {
-    "titulo": "Curso de React - UTN",
-  "imagen": "https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"  }
+    "titulo": "Fundamentos de Power BI - Crehana",
+    "imagen": "assets/img/certficados/fundamentosPWBI.png"
+  },
+  {
+    "titulo": "Introducción a Power BI - Crehana",
+    "imagen": "assets/img/certficados/introduccionPW.png"
+  },
+  {
+    "titulo": "Google sheets - Crehana",
+    "imagen": "assets/img/certficados/googleSheets.png"
+  },
+  {
+    "titulo": "Excel intermedio - Crehana",
+    "imagen": "assets/img/certficados/excelIntermedio.png"
+  },
+  {
+    "titulo": "Reparador de PC Básico - UNLA",
+    "imagen": "assets/img/certficados/repPcBasico.png"
+  }
 ]
