@@ -224,7 +224,7 @@ button.btn-carrousel.btn-custom:hover {
 .timeline {
   position: relative;
   margin-left: 30px;
-  border-left: 2px solid #3b82f6; /* Línea vertical */
+  border-left: 2px solid; /* Línea vertical */
   padding-left: 30px;
 }
 
