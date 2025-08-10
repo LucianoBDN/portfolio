@@ -13,6 +13,6 @@
   {
     "fecha": "010/2023 - 12/2023",
     "puesto": "Desarrollador Full Stack (Proyecto SportStrade)",
-    "descripcion": "Desarrollé junto a un equipo en la cursada de diplomatura de desarrollo we full stack una aplicación web para gestionar pedidos y pagos en una tienda online. Utilicé Node.js, Express, EJS y una base de datos no relacional con ORM mongoose."
+    "descripcion": "Desarrollé junto a un equipo en la cursada de diplomatura de desarrollo Web full stack una aplicación web para gestionar pedidos y pagos en una tienda online. Utilicé Node.js, Express, EJS y una base de datos no relacional con ORM mongoose."
   }
 ]
