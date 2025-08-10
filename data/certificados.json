@@ -48,8 +48,16 @@
     "imagen": "assets/img/certficados/googleSheets.png"
   },
   {
+    "titulo": "Excel Basico - Crehana",
+    "imagen": "assets/img/certficados/excelBasico.png"
+  },
+  {
     "titulo": "Excel intermedio - Crehana",
     "imagen": "assets/img/certficados/excelIntermedio.png"
+  },
+  {
+    "titulo": "Excel Avanzado - Crehana",
+    "imagen": "assets/img/certficados/excelAvanzado.png"
   },
   {
     "titulo": "Reparador de PC Básico - UNLA",

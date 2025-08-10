@@ -19,7 +19,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #FF4C61 !important; /* celeste */
+  color: #FF4C61 !important; 
 }
 
 .nav-link.active {
@@ -29,10 +29,10 @@ body {
 
 /* sobremi */
 .title-Section {
-  color: #FF4C61 !important; /* celeste/turquesa */
+  color: #FF4C61 !important; 
 }
 .color-base {
-  color: #FF4C61 !important; /* celeste/turquesa */
+  color: #e9666f    !important; 
 }
 
 
@@ -53,8 +53,16 @@ section {
   min-height: 60vh;
 }
 
+/* experiencia */
 #experiencia {
   min-height: 80vh;
+}
+
+.timeline-color{
+  background-color: #FF4C61  !important;
+}
+.timeline-border{
+  border-color: #FF4C61  !important;
 }
 
 /* certificados */
@@ -122,6 +130,7 @@ section {
 
 .card .card-body {
   padding: 1rem 1.25rem;
+  background-color: #17213a !important; /* Fondo oscuro */
   /* background-color: #111827 !important; */
 }
 

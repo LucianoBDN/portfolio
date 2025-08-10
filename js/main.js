@@ -176,9 +176,9 @@ function renderizarExperiencia(experiencias) {
     const item = document.createElement("div");
     item.className = "timeline-item";
     item.innerHTML = `
-      <span class="timeline-dot"></span>
-      <div class="timeline-content bg-dark">
-        <p class="date mb-2">
+      <span class="timeline-dot timeline-color"></span>
+      <div class="timeline-content bg-dark timeline-border">
+        <p class="date mb-2 color-base">
           <i class="bi bi-calendar3 me-2"></i> ${exp.fecha}
         </p>
         <h5 class="fw-bold text-danger">${exp.puesto}</h5>
