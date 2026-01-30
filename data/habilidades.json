@@ -3,18 +3,18 @@
   {
     "title": "Frontend",
     "icon": "bi-laptop",
-    "tools": "HTML, CSS, React, JavaScript"
+    "tools": "HTML, CSS, React, Angular, JavaScript, TypeScript"
   },
   {
     "title": "Backend",
     "icon": "bi-hdd-network",
-    "tools": "Node Js, Express, TypeScript, Python, Java"
+    "tools": "Node Js, Express, TypeScript, Python, Java, NestJS"
   },
   {
     "title": "Database",
     "icon": "bi-database",
-    "tools": "MongoDB, MySQL"
+    "tools": "MongoDB, MySQL, SupaBase, FireBase"
   },
-  { "title": "Cloud", "icon": "bi-cloud", "tools": "AWS(en curso)" },
-  { "title": "Other", "icon": "bi-box-seam", "tools": "Linux" }
+  { "title": "Cloud", "icon": "bi-cloud", "tools": "AWS(en curso), Cloudinary" },
+  { "title": "Other", "icon": "bi-box-seam", "tools": "Linux, Visual Studio, Netbeans" }
 ]

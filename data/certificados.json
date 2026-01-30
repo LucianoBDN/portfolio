@@ -4,6 +4,14 @@
     "imagen": "assets/img/certficados/desarrolladorWebFullStack.png"
   },
   {
+    "titulo": "NodeJS",
+    "imagen": "assets/img/certficados/Node.png"
+  },
+  {
+    "titulo": "Introduccion a Express",
+    "imagen": "assets/img/certficados/introduccionExpress.png"
+  },
+  {
     "titulo": "Python - Arbusta",
     "imagen": "assets/img/certficados/python.png"
   },

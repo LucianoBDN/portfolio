@@ -138,7 +138,7 @@
     "tecnologias": [
       {
         "nombre": "Python",
-        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+        "icono": "https://cdn-icons-png.flaticon.com/128/1387/1387537.png"
       },
       {
         "nombre": "CSV",
@@ -191,6 +191,98 @@
       {
         "nombre": "MongoDB",
         "icono": "https://cdn-icons-png.flaticon.com/128/9672/9672242.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/LucianoBDN/Quien_quiere_ser_millo_Acosta_Bordon_311_",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
+    }
+  },
+  {
+    "titulo": "SalaDeJuegos",
+    "descripcion": "SalaDeJuegos es un proyecto desarrollado como Evaluacion del la cursada de Programacion IV en UTN, combinando Angular para el frontend y Supabase para el backend. El objetivo del proyecto es aplicar conocimientos en desarrollo web.",
+    "imagen": "./assets/img/salaDeJuegos.png",
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSS",
+        "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+      },
+      {
+        "nombre": "typescript",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+      },
+      {
+        "nombre": "Angular",
+        "icono": "https://img.icons8.com/?size=48&id=71257&format=png"
+      },
+      {
+        "nombre": "Supabase",
+        "icono": "https://cdn-icons-png.flaticon.com/128/9672/9672242.png"
+      }
+    ],
+    "botones": {
+      "demo": {
+        "texto": "Pruébalo",
+        "url": "https://tu-demo.com",
+        "estilo": "btn btn-pink"
+      },
+      "codigo": {
+        "texto": "Código",
+        "url": "https://github.com/LucianoBDN/Quien_quiere_ser_millo_Acosta_Bordon_311_",
+        "estilo": "btn btn-dark"
+      },
+      "diseño": {
+        "texto": "Diseño",
+        "url": "https://figma.com/tu-prototipo",
+        "estilo": "btn btn-outline-light"
+      }
+    }
+  },
+  {
+    "titulo": "Red Social BDNVlog",
+    "descripcion": "Proyecto de una red social en la cual tabaje con Angular para el front y NestJS para el backend utilizando como base de datos MongoDB. Este proyecto formo parte de una evaluacion para la materia de Programacion IV en UTN",
+    "imagen": "./assets/img/BDNVlog.png",
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "icono": "https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
+      },
+      {
+        "nombre": "CSS",
+        "icono": "https://cdn-icons-png.flaticon.com/128/732/732190.png"
+      },
+      {
+        "nombre": "typescript",
+        "icono": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+      },
+      {
+        "nombre": "Angular",
+        "icono": "https://img.icons8.com/?size=48&id=71257&format=png"
+      },
+      {
+        "nombre": "MongoDB",
+        "icono": "https://cdn-icons-png.flaticon.com/128/9672/9672242.png"
+      },
+      {
+        "nombre": "NestJS",
+        "icono": "https://img.icons8.com/?size=48&id=9ESZMOeUioJS&format=png"
       }
     ],
     "botones": {
